@@ -53,7 +53,7 @@ MonoBehaviour:
     type: 3}
   ExplosionRadius: 5
   ExplosionForceMin: 500
-  ExplosionForceMax: 1500
+  ExplosionForceMax: 1000
 --- !u!1001 &5726149192678384410
 PrefabInstance:
   m_ObjectHideFlags: 0

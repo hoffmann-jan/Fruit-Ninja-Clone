@@ -29,7 +29,7 @@ public class Spawner : MonoBehaviour
 
             Debug.Log("Fruit Created");
 
-            Destroy(friut, 5);
+            Destroy(friut, GlobalVariables.FRUIT_REMOVE_TIME_SEC);
         }
     }
 }

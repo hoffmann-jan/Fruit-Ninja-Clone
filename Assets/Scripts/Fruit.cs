@@ -21,8 +21,10 @@ public class Fruit : MonoBehaviour
             rigidbodyPart.AddExplosionForce(Random.Range(ExplosionForceMin, ExplosionForceMax), transform.position, ExplosionRadius);
         }
 
+        FindObjectOfType<GameManager>()?.IncrementScore(3);
+
         Destroy(gameObject);
-        Destroy(slicedFruit, 5);
+        Destroy(slicedFruit, GlobalVariables.FRUIT_REMOVE_TIME_SEC);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
