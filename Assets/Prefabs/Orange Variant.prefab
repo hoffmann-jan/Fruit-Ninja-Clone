@@ -51,6 +51,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SlicedFruitPrefab: {fileID: 4021115967552007208, guid: 5fe49a41aeec647d6a4743342ee02010,
     type: 3}
+  ExplosionRadius: 5
+  ExplosionForceMin: 500
+  ExplosionForceMax: 1500
 --- !u!1001 &5726149192678384410
 PrefabInstance:
   m_ObjectHideFlags: 0
