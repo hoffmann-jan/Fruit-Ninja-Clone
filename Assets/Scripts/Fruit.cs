@@ -22,13 +22,12 @@ public class Fruit : MonoBehaviour
         }
 
         Destroy(gameObject);
+        Destroy(slicedFruit, 5);
     }
 
-
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (collision.GetComponent<Blade>())
         {
             CreateSlicedFruit();
         }
