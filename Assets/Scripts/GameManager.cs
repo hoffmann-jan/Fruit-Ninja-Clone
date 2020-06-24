@@ -14,9 +14,15 @@ public class GameManager : MonoBehaviour
     [Header("Game Over Elements")]
     public GameObject GameOverPanel;
 
+    [Header("Sounds")]
+    public AudioClip[] SliceSounds;
+    private AudioSource AudioSource;
+
 
     private void Awake()
     {
+        AudioSource = GetComponent<AudioSource>();
+
         GameOverPanel.SetActive(false);
         SetHighScore();
     }
@@ -31,6 +37,14 @@ public class GameManager : MonoBehaviour
             HighScore = Score;
             PlayerPrefs.SetInt(HighScoreKey, HighScore);
         }
+
+        PlayRandomSliceSound();
+    }
+
+    private void PlayRandomSliceSound()
+    {
+        AudioClip randomClip = SliceSounds[Random.Range(0, SliceSounds.Length)];
+        AudioSource.PlayOneShot(randomClip);
     }
 
     public void OnBombHit()
