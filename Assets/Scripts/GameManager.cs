@@ -12,4 +12,12 @@ public class GameManager : MonoBehaviour
         Score += score;
         ScoreText.text = Score.ToString();
     }
+
+    public void OnBombHit()
+    {
+        // Break Game
+        Time.timeScale = 0;
+
+        Debug.Log("Bomb HIT");
+    }
 }

@@ -228,7 +228,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae88a7f14911c4391bcda61ccb32f314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FruitToSpawnPrefab: {fileID: 5726149192678483386, guid: 3f73dac33ff9f42f9a91f14c2d2ce45c,
+  FruitsToSpawnPrefab:
+  - {fileID: 5726149192678483386, guid: 3f73dac33ff9f42f9a91f14c2d2ce45c, type: 3}
+  BombPrefab: {fileID: 4349267273531409283, guid: 3853bef515d85424fafe0763497e0c79,
     type: 3}
   SpawnPlaces:
   - {fileID: 302244252}
@@ -238,6 +240,7 @@ MonoBehaviour:
   MaximumWait: 1
   SpawnForceMin: 10
   SpawnForceMax: 17
+  BombChance: 0.1
 --- !u!4 &282911654
 Transform:
   m_ObjectHideFlags: 0
