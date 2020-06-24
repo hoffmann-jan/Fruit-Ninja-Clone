@@ -65,6 +65,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orange Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cf29ea156d47848a3a6d27a6ebad90c4, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf29ea156d47848a3a6d27a6ebad90c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
