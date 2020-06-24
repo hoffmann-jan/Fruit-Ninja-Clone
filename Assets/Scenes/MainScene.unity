@@ -1354,6 +1354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Score: 0
   ScoreText: {fileID: 550158652}
+  HighScore: 0
   HighScoreText: {fileID: 204889358}
   GameOverPanel: {fileID: 2023531298}
 --- !u!4 &2098392836
